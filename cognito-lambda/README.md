@@ -18,8 +18,8 @@ This is an AWS Serverless Application. If you deploy it, this is what you get:
 
 ### How to deploy the Serverless Application with AWS SAM CLI
 
-1. Clone this repo `git clone https://github.com/aws-samples/amazon-cognito-passwordless-email-auth.git`
-2. Enter cognito directory: `cd amazon-cognito-passwordless-email-auth/cognito`
+1. Clone this repo `git clone https://github.com/shazi7804/aws-cognito-passwordless-sms-auth.git`
+2. Enter cognito directory: `cd aws-cognito-passwordless-sms-auth/cognito-lambda`
 3. Install dependencies: `npm install`
 4. Set the following environment variables (all mandatory):
   - S3_BUCKET_NAME='the bucket name of the bucket you want to use for your SAM deployment'
@@ -33,8 +33,11 @@ if that succeeded, you have succesfully deployed your application. The outputs o
 Deploy either through the Serverless Application Repository or with the AWS SAM CLI
 
 ```
+# For example
 sam deploy --stack-name=cognito-passwordless-sms-auth \
-           --s3-bucket=cognito-passwordless-sms-auth --parameter-overrides ParameterKey=UserPoolName,ParameterValue=cognito-passwordless-sms-auth --capabilities CAPABILITY_IAM
+           --s3-bucket=cognito-passwordless-sms-auth-J21kw0Q$ \
+           --parameter-overrides ParameterKey=UserPoolName,ParameterValue=cognito-passwordless-sms-auth \
+           --capabilities CAPABILITY_IAM
 ```
 
 ## Clients
