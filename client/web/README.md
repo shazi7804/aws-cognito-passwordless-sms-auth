@@ -24,14 +24,14 @@ The web app client should be running at http://localhost:4200 allowing you to re
 ## User Sign-in pipeline
 
 1. Sign-in page with `Full Name` and `Phone Numner`
-![signup-register](img/signup-register.png)
+![](img/signup-register.png =250x)
 
 2. Enter secret code from SMS.
 
-![signup-sms-code](img/signup-sms-code.png)
+![](img/signup-sms-code.png =250x)
 
 3. Show user information from Cognito User Pool
-![signup-success](img/signup-success.png)
+![](img/signup-success.png =250x)
 
 ### License Summary
 
