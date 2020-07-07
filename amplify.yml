@@ -3,13 +3,13 @@ frontend:
   phases:
     preBuild:
       commands:
-        - cd webClient/angular
+        - cd client/web
         - npm ci
     build:
       commands:
         - npm run build
   artifacts:
-    baseDirectory: webClient/angular/dist/amplify-passwordless-sms-auth-client
+    baseDirectory: client/web/dist/amplify-passwordless-sms-auth-client
     files:
       - '**/*'
   cache:

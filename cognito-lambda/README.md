@@ -20,7 +20,7 @@ This is an AWS Serverless Application. If you deploy it, this is what you get:
 
 1. Clone this repo `git clone https://github.com/shazi7804/aws-cognito-passwordless-sms-auth.git`
 2. Enter cognito directory: `cd aws-cognito-passwordless-sms-auth/cognito-lambda`
-3. Install dependencies: `npm install`
+3. Install dependencies: `npm install --prefix lambda-triggers/create-auth-challenge`
 4. Set the following environment variables (all mandatory):
   - S3_BUCKET_NAME='the bucket name of the bucket you want to use for your SAM deployment'
   - SES_FROM_ADDRESS='the verfied e-mail address in SES the e-mails will be sent from'
@@ -35,7 +35,7 @@ Deploy either through the Serverless Application Repository or with the AWS SAM 
 ```
 # For example
 sam deploy --stack-name=cognito-passwordless-sms-auth \
-           --s3-bucket=cognito-passwordless-sms-auth-J21kw0Q$ \
+           --s3-bucket=cognito-passwordless-sms-auth-21kw021947hfd-320 \
            --parameter-overrides ParameterKey=UserPoolName,ParameterValue=cognito-passwordless-sms-auth \
            --capabilities CAPABILITY_IAM
 ```
